@@ -113,7 +113,7 @@ body {
 
 /* Video Section Styles */
 .video-section {
-    background-color: #432818; /* Using color from the provided palette */
+    background-color: #ffffff; /* White color for the video section background */
     padding: 2em 0;
     text-align: center;
 }
@@ -164,5 +164,209 @@ body {
 
 .client-logo:hover {
     opacity: 0.8; /* Logo fades slightly on hover */
+}
+
+/* Services Section Styles */
+.services-section {
+    background-color: #ffffff;
+    padding: 2em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex-basis: 22%; /* Adjust so they wrap on smaller screens */
+    text-align: center;
+    margin: 1em;
+}
+
+.service i {
+    font-size: 2em;
+    color: #6f1d1b;
+}
+
+.service h3 {
+    margin: 0.5em 0;
+    color: #432818;
+}
+
+.service p {
+    color: #432818;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    background-color: #ffe6a7;
+    padding: 2em 0;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff; /* White border around the image */
+}
+
+.testimonial-content {
+    max-width: 50%;
+    margin-left: 2em;
+}
+
+.testimonial-content .quote {
+    font-size: 1em;
+    color: #432818;
+    position: relative;
+    padding-left: 40px;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #6f1d1b;
+    font-size: 2em;
+}
+
+.customer-name {
+    display: block;
+    font-weight: bold;
+    color: #432818;
+    margin-top: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        flex-basis: 100%;
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-content {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .testimonial-content .quote {
+        padding-left: 0;
+    }
+
+    .quote-icon {
+        position: relative;
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex-basis: 45%;
+    max-width: 45%;
+}
+
+.contact-image {
+    flex-basis: 45%;
+    max-width: 45%;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.vertical-form input,
+.vertical-form textarea,
+.vertical-form button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.vertical-form button {
+    background-color: #6f1d1b; /* Dark burgundy from your palette */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #432818; /* Dark brown color */
+    color: #ffe6a7; /* Light cream color for text */
+    text-align: center;
+    padding: 1em 0;
+}
+
+.site-footer a {
+    color: #ffe6a7; /* Light cream color */
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.site-footer a:hover {
+    color: #bb9457; /* Mustard color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-section, .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form, .contact-image {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .contact-image img {
+        margin-top: 2em;
+    }
 }
 
