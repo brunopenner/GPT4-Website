@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffe6a7; /* Light cream background */
+    color: #432818; /* Dark brown text */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* White background to keep it clean and neutral */
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #6f1d1b; /* Dark red for the logo */
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #99582a; /* Rich medium brown for menu items */
+    font-size: 16px;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    padding: 50px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #6f1d1b; /* Dark red for headings */
+}
+
+.hero-text p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #432818; /* Keeping the text dark brown */
+}
+
+.get-started {
+    background-color: #bb9457; /* Muted gold for buttons */
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff; /* White text on buttons for contrast */
+}
+
+.hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    /* max-width: 400px; */
+    height: auto;
+    /* aspect-ratio: 1 / 1; */
+    border: 5px solid #6f1d1b; /* Dark red border for the image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Video Section Styles */
+.video-section {
+    background-color: #432818; /* Using color from the provided palette */
+    padding: 2em 0;
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 640px; /* Set this to the width you want the video to have */
+    margin: 0 auto;
+}
+
+.pet-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Adjust the padding-bottom value to maintain the aspect ratio of the video */
+.video-wrapper::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;  /* 16:9 aspect ratio */
+}
+
+/* Clients Section Styles */
+.clients-section {
+    background-color: #ffe6a7; /* Light cream color for the section background */
+    padding: 2em 0;
+    text-align: center;
+}
+
+.client-logo-link {
+    display: inline-block;
+    margin: 0 1em; /* Spacing between logos */
+    transition: transform 0.3s ease;
+}
+
+.client-logo-link:hover {
+    transform: scale(1.1); /* Logo grows slightly on hover */
+}
+
+.client-logo {
+    max-width: 120px; /* Adjust based on your design preference */
+    transition: opacity 0.3s ease;
+}
+
+.client-logo:hover {
+    opacity: 0.8; /* Logo fades slightly on hover */
+}
+
